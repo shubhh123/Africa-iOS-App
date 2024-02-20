@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+
+        NavigationStack {
+            List {
+                CoverImageView()
+                    .frame(height: 265) //300
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)) // TO GET RID OF PADDING
+            }//: LIST
+            .navigationTitle("Africa")
+        } //: NAVIGATION
     }
 }
 

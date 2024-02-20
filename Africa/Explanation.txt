@@ -1,0 +1,14 @@
+
+1. Started off with Main View. Added Tab View [Just like you have in a normal application to navigate to different sections in your app]
+    ContentView acts as a serves as the entry point and root view of your SwiftUI application.
+    
+    The .tabItem modifier is applied to provide an icon (in this case, a square grid icon) for the tab, which will be displayed in the tab bar.
+    
+2. Added all the necessary Views to the Tab view
+
+3. Replaced the ContentView() with MainView() in AfricaApp...
+
+
+
+4. Created a Model: CoverImageModel
+        Conforming to Codable means that instances of your type can be encoded to a JSON or other data format and decoded back from that format.
