@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AnimalListItemView: View {
+struct IndividualAnimalListItemView: View {
     
     let animal: Animal
     
@@ -46,6 +46,6 @@ struct AnimalListItemView_Previws: PreviewProvider {
     static let animals: [Animal] = Bundle.main.decode("animals.json")
     
     static var previews: some View {
-        AnimalListItemView(animal: animals[1])
+        IndividualAnimalListItemView(animal: animals[1])
     }
 }
